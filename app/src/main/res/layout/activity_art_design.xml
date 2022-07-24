@@ -4,57 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NaturalSciences">
+    tools:context=".ArtDesign">
 
     <Button
-        android:id="@+id/mathematicsDepartment"
+        android:id="@+id/ContemporaryArt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
-        android:text="수학과"
+        android:backgroundTint="#9E1A20"
+        android:text="현대미술전공"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/FacultyOfChemicalAndEnvironmentalSciences"
+        android:id="@+id/CeramicsFiberArt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="화학생명환경과학부"
+        android:backgroundTint="#9E1A20"
+        android:text="공예전공"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mathematicsDepartment" />
+        app:layout_constraintTop_toBottomOf="@+id/ContemporaryArt" />
 
     <Button
-        android:id="@+id/DepartmentOfHoriculturalLifeLandscape"
+        android:id="@+id/VisualCommunicationDesign"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="원예생명조경학과"
+        android:backgroundTint="#9E1A20"
+        android:text="시각디자인전공"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FacultyOfChemicalAndEnvironmentalSciences" />
+        app:layout_constraintTop_toBottomOf="@+id/CeramicsFiberArt" />
 
     <Button
-        android:id="@+id/DepartmentOfFoodApplicationSystems"
+        android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="식품응용시스템학부"
+        android:backgroundTint="#9E1A20"
+        android:text="첨단미디어디자인전공"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DepartmentOfHoriculturalLifeLandscape" />
+        app:layout_constraintTop_toBottomOf="@+id/VisualCommunicationDesign" />
 </androidx.constraintlayout.widget.ConstraintLayout>
