@@ -35,6 +35,17 @@
         app:layout_constraintTop_toBottomOf="@+id/schoolEmail_textView"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <ImageView
+        android:id="@+id/email_icon_imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/schoolEmail_editText"
+        app:layout_constraintStart_toStartOf="@+id/schoolEmail_editText"
+        app:layout_constraintTop_toTopOf="@+id/schoolEmail_editText"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/email_icon_2x" />
+
     <android.widget.Button
         android:id="@+id/emailCheck_button"
         android:layout_width="wrap_content"
@@ -80,6 +91,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkNumber_textView"
         tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/checkNumber_imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkNumber_editText"
+        app:layout_constraintStart_toStartOf="@+id/checkNumber_editText"
+        app:layout_constraintTop_toTopOf="@+id/checkNumber_editText"
+        app:srcCompat="@drawable/check_number_icon_2x" />
 
     <android.widget.Button
         android:id="@+id/numberCheck_button"
@@ -140,6 +161,16 @@
         app:layout_constraintTop_toBottomOf="@+id/password_textView"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <ImageView
+        android:id="@+id/password_imageView1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/password_editText"
+        app:layout_constraintStart_toStartOf="@+id/password_editText"
+        app:layout_constraintTop_toTopOf="@+id/password_editText"
+        app:srcCompat="@drawable/password_icon_2x" />
+
     <TextView
         android:id="@+id/rePassword_textView"
         android:layout_width="wrap_content"
@@ -167,6 +198,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rePassword_textView"
         tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/password_imageView2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rePassword_editText"
+        app:layout_constraintStart_toStartOf="@+id/rePassword_editText"
+        app:layout_constraintTop_toTopOf="@+id/rePassword_editText"
+        app:srcCompat="@drawable/password_icon_2x" />
 
     <ImageView
         android:id="@+id/dividingLine_imageView2"
@@ -203,7 +244,7 @@
         android:hint="이름을 입력해주세요"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:paddingLeft="30dp"
+        android:paddingLeft="10dp"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userName_textView"
@@ -231,7 +272,7 @@
         android:hint="학번을 입력해주세요"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:paddingLeft="30dp"
+        android:paddingLeft="10dp"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userStudentID_textView"

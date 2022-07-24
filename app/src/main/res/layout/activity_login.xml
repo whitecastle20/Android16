@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/emailID_editText" />
 
     <ImageView
-        android:id="@+id/password_imageView"
+        android:id="@+id/password_imageView1"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
