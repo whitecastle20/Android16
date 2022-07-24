@@ -8,4 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="swupurple">#FF9E1A20</color>
+
+
+    <color name="Active_Text">#28292D</color>
+    <color name="Inactive_Text">#B5B5B5</color>
+
+    <color name="Background">#EDE5CF</color>
+
+    <color name="Maincolor_Red">#9E1A20</color>
+
 </resources>

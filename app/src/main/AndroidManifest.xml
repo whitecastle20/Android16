@@ -20,6 +20,15 @@
             android:name=".Humanities"
             android:exported="false" />
         <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartOnboardingActivity"
+            android:exported="false" />
+        <activity
             android:name=".FutureIndustrialConvergence"
             android:exported="false" />
         <activity

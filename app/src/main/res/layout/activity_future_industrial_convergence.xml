@@ -93,18 +93,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/DeparmentOfComputerScience"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="컴퓨터학과"
-        app:layout_constraintBottom_toTopOf="@+id/DepartmentOfContentDesign"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/DepartmentOfIndustrialDesign"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -113,6 +101,18 @@
         android:layout_marginBottom="8dp"
         android:text="산업디자인학과"
         app:layout_constraintBottom_toTopOf="@+id/DeparmentOfComputerScience"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/DeparmentOfComputerScience"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="컴퓨터학과"
+        app:layout_constraintBottom_toTopOf="@+id/DepartmentOfContentDesign"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
