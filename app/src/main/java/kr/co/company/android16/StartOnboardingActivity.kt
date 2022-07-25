@@ -31,7 +31,7 @@ class StartOnboardingActivity : AppCompatActivity() {
 
     }
 
-    //버튼 클릭 시 로그인 화면으로 이동
+    // 시작하기 버튼 클릭 시 로그인 화면으로 이동
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item?.itemId){
             R.id.start_button -> {
