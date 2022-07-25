@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/schoolEmail_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="학교 이메일"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/schoolEmail_editText"
+        android:layout_width="270dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/signup_round_button"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="학교 이메일을 입력해주세요"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="30dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schoolEmail_textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/email_icon_imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/schoolEmail_editText"
+        app:layout_constraintStart_toStartOf="@+id/schoolEmail_editText"
+        app:layout_constraintTop_toTopOf="@+id/schoolEmail_editText"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/email_icon_2x" />
+
+    <android.widget.Button
+        android:id="@+id/emailCheck_button"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/start_round_button"
+        android:backgroundTint="@color/Maincolor_Red"
+        android:text="인증하기"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/schoolEmail_editText"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/checkNumber_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="인증번호"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schoolEmail_editText" />
+
+    <EditText
+        android:id="@+id/checkNumber_editText"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/signup_round_button"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="인증번호를 입력해주세요"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="30dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkNumber_textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/checkNumber_imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkNumber_editText"
+        app:layout_constraintStart_toStartOf="@+id/checkNumber_editText"
+        app:layout_constraintTop_toTopOf="@+id/checkNumber_editText"
+        app:srcCompat="@drawable/check_number_icon_2x" />
+
+    <android.widget.Button
+        android:id="@+id/numberCheck_button"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/start_round_button"
+        android:backgroundTint="@color/Maincolor_Red"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toEndOf="@+id/checkNumber_editText"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <ImageView
+        android:id="@+id/dividingLine_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkNumber_editText"
+        app:srcCompat="@drawable/dividing_line" />
+
+    <TextView
+        android:id="@+id/password_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="비밀번호 입력"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividingLine_imageView1" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/signup_round_button"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="비밀번호를 입력해주세요"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="30dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/password_imageView1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/password_editText"
+        app:layout_constraintStart_toStartOf="@+id/password_editText"
+        app:layout_constraintTop_toTopOf="@+id/password_editText"
+        app:srcCompat="@drawable/password_icon_2x" />
+
+    <TextView
+        android:id="@+id/rePassword_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="비밀번호 확인"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_editText" />
+
+    <EditText
+        android:id="@+id/rePassword_editText"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/signup_round_button"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="비밀번호를 다시 입력해주세요"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="30dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rePassword_textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/password_imageView2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rePassword_editText"
+        app:layout_constraintStart_toStartOf="@+id/rePassword_editText"
+        app:layout_constraintTop_toTopOf="@+id/rePassword_editText"
+        app:srcCompat="@drawable/password_icon_2x" />
+
+    <ImageView
+        android:id="@+id/dividingLine_imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rePassword_editText"
+        app:srcCompat="@drawable/dividing_line" />
+
+    <TextView
+        android:id="@+id/userName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="사용자 이름"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividingLine_imageView2" />
+
+    <EditText
+        android:id="@+id/userName_editText"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/signup_round_button"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="이름을 입력해주세요"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName_textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/userStudentID_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="사용자 학번"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName_editText" />
+
+    <EditText
+        android:id="@+id/userStudentID_editText"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/signup_round_button"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="학번을 입력해주세요"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userStudentID_textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <android.widget.Button
+        android:id="@+id/start_button"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/start_round_button"
+        android:backgroundTint="@color/Maincolor_Red"
+        android:fontFamily="sans-serif-black"
+        android:text="회원가입"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userStudentID_editText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
