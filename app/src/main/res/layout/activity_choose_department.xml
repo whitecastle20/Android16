@@ -4,36 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Background"
-    tools:context=".ChooseCollege">
+    tools:context=".ChooseDepartment">
 
     <Button
-        android:id="@+id/HumanitiesButton"
+        android:id="@+id/btnHumanities"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:text="인문대학"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="145dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="70dp"
-        android:text="소속 학부 선택"
-        android:textColor="@color/Active_Text"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/SocialSciencesButton"
+        android:id="@+id/btnSocialSciences"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -42,10 +28,10 @@
         android:text="사회과학대학"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HumanitiesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/btnHumanities" />
 
     <Button
-        android:id="@+id/NaturalSciencesButton"
+        android:id="@+id/btnNatualSciences"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -54,10 +40,10 @@
         android:text="자연과학대학"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SocialSciencesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSocialSciences" />
 
     <Button
-        android:id="@+id/FutureIndustrialButton"
+        android:id="@+id/btnFutureIndustrialConvergence"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -66,10 +52,10 @@
         android:text="미래산업융합대학"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NaturalSciencesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/btnNatualSciences" />
 
     <Button
-        android:id="@+id/ArtDesignButton"
+        android:id="@+id/btnArtDesign"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -78,10 +64,10 @@
         android:text="아트앤디자인스쿨"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FutureIndustrialButton" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFutureIndustrialConvergence" />
 
     <Button
-        android:id="@+id/ChooseDepartmentButton"
+        android:id="@+id/btnFreeMajor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -90,5 +76,16 @@
         android:text="자율전공학부"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ArtDesignButton" />
+        app:layout_constraintTop_toBottomOf="@+id/btnArtDesign" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="소속 학부 선택"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
