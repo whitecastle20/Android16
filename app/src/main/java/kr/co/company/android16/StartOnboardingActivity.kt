@@ -1,7 +1,9 @@
 package kr.co.company.android16
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -27,6 +29,18 @@ class StartOnboardingActivity : AppCompatActivity() {
         appExplain_textView = findViewById(R.id.appExplain_textView)
         start_button = findViewById(R.id.start_button)
 
+    }
+
+    //버튼 클릭 시 로그인 화면으로 이동
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item?.itemId){
+            R.id.start_button -> {
+                val intent = Intent(this, SignUpActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 
